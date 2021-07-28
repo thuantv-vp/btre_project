@@ -142,3 +142,14 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAG = {
     messages.ERROR: "danger",
 }
+# Email config
+EMAIL_HOST = 'stmp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER='tangthuaney@gmail.com'
+EMAIL_HOST_PASSWORD=''
+EMAIL_USE_TLS=True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
