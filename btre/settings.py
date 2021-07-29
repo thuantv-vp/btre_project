@@ -142,6 +142,7 @@ MESSAGE_TAG = {
     messages.ERROR: "danger",
 }
 
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 
 try:
     from .local_settings import *
